@@ -4,10 +4,11 @@ from esm.sdk.api import ESM3InferenceClient, ESMProtein, GenerationConfig
 import os 
 import gradio as gr
 from gradio_molecule3d import Molecule3D
-
+from dotenv import load_dotenv
 
 # This will prompt you to get an API key from huggingface hub, make one with
 # "Read" or "Write" permission and copy it back here.
+load_dotenv()
 TOKEN = os.getenv("HF_TOKEN")
 
 login(TOKEN)
