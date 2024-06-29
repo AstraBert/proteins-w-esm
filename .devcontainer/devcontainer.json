@@ -21,5 +21,5 @@
 			]
 		}
 	},
-	"postStartCommand": "python3 app.py"
+	"postStartCommand": "export HF_TOKEN=$HF_TOKEN && python3 app.py"
 }
